@@ -1,0 +1,80 @@
+# Python virtual environments
+venv/
+venv2/
+venv312/
+.venv/
+
+# Python generated files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables / secrets
+.env
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp# --------------------
+# Python environments
+# --------------------
+venv/
+venv2/
+venv312/
+.venv/
+
+# --------------------
+# Python generated files
+# --------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# --------------------
+# Secrets / environment variables
+# --------------------
+.env
+.env.*
+!.env.example
+
+# --------------------
+# macOS
+# --------------------
+.DS_Store
+
+# --------------------
+# IDEs
+# --------------------
+.vscode/
+.idea/
+
+# --------------------
+# Local model files
+# --------------------
+*.gguf
+*.bin
+models/
+
+# --------------------
+# Temporary files
+# --------------------
+*.tmp
+*.log
+temp/
+tmp/
+
+# --------------------
+# Coverage/testing output
+# --------------------
+.coverage
+htmlcov/
+
+# --------------------
+# Jupyter
+# --------------------
+.ipynb_checkpoints/
