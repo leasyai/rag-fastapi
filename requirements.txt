@@ -176,3 +176,4 @@ xxhash==4.0.1
 yarl==1.24.5
 httpx
 pytest
+llama-cpp-python ==0.3.35
