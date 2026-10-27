@@ -20,6 +20,9 @@ import tempfile
 import json
 import psycopg
 
+from dotenv import load_dotenv
+load_dotenv()
+
 
 
 import torch
@@ -123,7 +126,7 @@ def store_nodes(nodes):
         port=5432,
         dbname="rag_db",
         user="layal",
-        password="your_password"
+        password=os.environ["DB_PASSWORD"]
     )
 
     with conn.cursor() as cur:
@@ -163,7 +166,8 @@ def query(
         host="localhost",
         port=5432,
         dbname="rag_db",
-        user="layal"
+        user="layal",
+        password=os.environ["DB_PASSWORD"]
     )
 
     try:

@@ -18,7 +18,9 @@ import numpy as np
 from contextlib import asynccontextmanager
 import tempfile
 import httpx
-
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 
 import torch
@@ -123,8 +125,8 @@ def store_nodes(nodes):
         host="localhost",
         port=5432,
         dbname="rag_db",
-        user="postgres",
-        password="your_password"
+        user="layal",
+        password=os.environ["DB_PASSWORD"]
     )
 
     with conn.cursor() as cur:

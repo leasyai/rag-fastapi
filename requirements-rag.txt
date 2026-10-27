@@ -16,3 +16,4 @@ pymupdf==1.28.2
 
 psycopg==3.3.5
 pgvector==0.5.0
+python-dotenv

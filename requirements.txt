@@ -179,3 +179,4 @@ pytest
 llama-cpp-python==0.3.35
 psycopg ==3.3.5
 llama-index-llms-llama-cpp==0.6.1
+python-dotenv
