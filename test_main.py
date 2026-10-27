@@ -7,8 +7,11 @@ from main import store_nodes
 
 
         
-def test_store_nodes():
+def test_store_nodes(monkeypatch):
     # 2. Create nodes with known embeddings
+    
+    monkeypatch.setenv("DB_PASSWORD", "dummy_test_password")
+    
     node1 = TextNode(text="Cats are animals")
     node1.embedding = [1.0, 0.0]
 
